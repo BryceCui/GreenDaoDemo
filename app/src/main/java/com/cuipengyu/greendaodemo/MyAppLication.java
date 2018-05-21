@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.cuipengyu.greendaodemo.db.DaoMaster;
 import com.cuipengyu.greendaodemo.db.DaoSession;
+import com.facebook.stetho.Stetho;
 
 import org.greenrobot.greendao.database.Database;
 
@@ -27,6 +28,7 @@ public class MyAppLication extends Application {
     public void onCreate() {
         super.onCreate();
         mLication = this;
+        Stetho.initializeWithDefaults(this);
 
     }
 
